@@ -6,7 +6,7 @@ use think\Controller;
 class Logistics extends Controller {
 
     public function tools(){
-    
+
 
         $this->assign('menu', '物流工具');
         return $this->fetch();
@@ -27,5 +27,6 @@ class Logistics extends Controller {
     */
     public function saveTemplate(){
 
+        $post=$this->request->post();
     }
 }
